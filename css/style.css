@@ -8,6 +8,8 @@
         src: url('../fonts/OpenSans-Bold.ttf');
 }
 
+/* estilos gerais */
+
 *{
         margin: 0;
         padding: 0;
@@ -66,7 +68,7 @@ height: 100%;
         color: #fff;
         text-decoration: none;
         background-color: #1387ff;
-        border-radius: 10px;
+        border-radius: 20px;
         margin-top: 3%;
 }
 
