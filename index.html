@@ -5,6 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/fontawesome.min.css">
         <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,11 +26,15 @@
                         <header class="flex space-between center-vertical header">
                                 <div class="logo text-white negrito">DankiCode</div>
 
-                                <nav class="menu flex space-between">
+                                <nav class="menu flex space-between hide-mobile">
                                         <a class="text-white" href="">Home</a>
                                         <a class="text-white" href="">Sobre</a>
                                         <a class="text-white" href="">Contato</a>
                                 </nav>
+
+                                <img src="images/menu-mobile.png" alt="menu" class="hide-desk show-mobile menu-mobile">
+
+
                         </header>
 
                 </div>
@@ -52,11 +60,12 @@
         <section class="planos">
                 <div class="background-cinza">
                         <div class="container align-center">
-                                <h2 class="titulo-planos text-blue-2 borda-top-blue">Confira nossos planos</h2>
+                                <h2 class="titulo-planos text-blue-2 borda-top-blue margin-top-40-mobile">Confira nossos
+                                        planos</h2>
                         </div>
                 </div>
 
-                <div class="container flex space-evenly container-box-planos">
+                <div class="container flex space-evenly container-box-planos justify-center-mobile">
                         <div class="box">
                                 <h3 class="background-blue text-white align-center subtitulo-planos">Lorem ipsum</h3>
                                 <ul class="lista-planos text-gray">
@@ -73,7 +82,7 @@
                                 <p class="text-gray border-top-gray preco-plano">R$ 24,00</p>
                         </div>
 
-                        <div class="box">
+                        <div class="box margin-top-10-mobile">
                                 <h3 class="background-blue text-white align-center subtitulo-planos">Lorem ipsum</h3>
                                 <ul class="lista-planos text-gray">
                                         <li><i class="fas fa-check-square" aria-hidden="true"></i>Lorem ipsum dolor sit
@@ -89,7 +98,7 @@
                                 <p class="text-gray border-top-gray preco-plano">R$ 24,00</p>
                         </div>
 
-                        <div class="box">
+                        <div class="box margin-top-10-mobile">
                                 <h3 class="background-blue text-white align-center subtitulo-planos">Lorem ipsum</h3>
                                 <ul class="lista-planos text-gray">
                                         <li><i class="fas fa-check-square" aria-hidden="true"></i>Lorem ipsum dolor sit
@@ -109,7 +118,7 @@
 
 
         <div class="fundo-preto-2"></div>
-        <section class="sobre background-sobre">
+        <section class="sobre background-sobre margin-top-40-mobile">
                 <div class="container container-sobre  z-index-2 align-center">
                         <h2 class="text-white titulo-sobre">Sobre a Nossa <span class="text-blue">Empresa</span></h2>
 
@@ -127,8 +136,8 @@
 
 
         <div class="container margin-top-30">
-                <div class="flex space-between">
-                        <section class="w-48">
+                <div class="flex space-between justify-center-mobile">
+                        <section class="w-48 margin-top-40-mobile">
                                 <div class="borda-titulo"></div>
                                 <h2 class="text-gray margin-bottom-25">Entre em contato</h2>
 
@@ -145,7 +154,7 @@
                                 <input class="botao-saiba-mais" type="submit" value="Enviar">
                         </section>
 
-                        <section class="w-48">
+                        <section class="w-48 margin-top-40-mobile">
                                 <div class="borda-titulo"></div>
                                 <h2 class="text-gray margin-bottom-25">Conheça nosso time</h2>
 
@@ -190,7 +199,7 @@
 
         <footer class="background-preto margin-top-60">
                 <div class="container padding-2 text-white align-center">
-                        Todos os direitos Reservados 
+                        Todos os direitos Reservados
                 </div>
         </footer>
 
@@ -198,6 +207,7 @@
 
 
 
+        <script src="js/menu.js"></script>
 
 </body>
 
